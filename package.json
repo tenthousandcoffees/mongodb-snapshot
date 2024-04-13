@@ -19,7 +19,7 @@
   },
   "types": "./dist/index.d.ts",
   "devDependencies": {
-    "@types/joi": "^14.3.4",
+    "@types/joi": "^17.2.3",
     "@types/lodash": "^4.14.155",
     "@types/mongodb": "^3.5.20",
     "@types/node": "^14.0.13",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "bson": "^4.1.0",
-    "joi": "^14.3.1",
+    "joi": "^17.12.3",
     "lodash": "^4.17.15",
     "mongodb": "^3.5.8",
     "rxjs": "6.4.0",

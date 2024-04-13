@@ -14,10 +14,10 @@ import { convertAsyncGeneratorToObservable, hasRegexMatch } from '../../utils';
 
 const BSON_DOC_HEADER_SIZE = 4;
 
-const documentFilterSchema = joi.alternatives().try([
+const documentFilterSchema = joi.alternatives().try(
     joi.string(),
     joi.func()
-]).required();
+).required();
 
 const schema = joi.object(<Schema<MongoDBConnectorOptions>>{
     connection: joi.object(<Schema<MongoDBConnection>>{
