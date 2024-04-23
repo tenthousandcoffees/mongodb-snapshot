@@ -1,21 +1,22 @@
 {
-  "name": "mongodb-snapshot",
+  "name": "@tenthousandcoffees/mongodb-snapshot",
   "version": "1.4.1",
   "description": "Manages MongoDB snapshots, provides functionality to deliver MongoDB content between data sources for backup and restore",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "author": "Lihai Ben-Haim <lihaibh@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/lihaibh/mongodb-snapshot#readme",
+  "homepage": "https://github.com/tenthousandcoffees/mongodb-snapshot#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lihaibh/mongodb-snapshot.git"
+    "url": "git+https://github.com/tenthousandcoffees/mongodb-snapshot.git"
   },
   "bugs": {
-    "url": "https://github.com/lihaibh/mongodb-snapshot/issues"
+    "url": "https://github.com/tenthousandcoffees/mongodb-snapshot/issues"
   },
   "scripts": {
-    "prepublish": ""
+    "build": "tsc -p ./tsconfig.json",
+    "prepublish": "npm run build"
   },
   "types": "./dist/index.d.ts",
   "devDependencies": {
@@ -37,5 +38,8 @@
     "rxjs-for-await": "^0.0.2",
     "tar-stream": "^2.1.2",
     "verror": "^1.10.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
