@@ -1,16 +1,16 @@
-# [mongodb-snapshot](https://github.com/lihaibh/mongodb-snapshot)
+# [mongodb-snapshot](https://github.com/tenthousandcoffees/mongodb-snapshot)
 
 Dump and restore MongoDB content between data sources.
 
 ## Installation
 ```sh
-npm install mongodb-snapshot
+npm install @tenthousandcoffees/mongodb-snapshot
 ```
 
 ## Usage
 *dump mongodb database to a local file*
 ```typescript
-import { MongoTransferer, MongoDBDuplexConnector, LocalFileSystemDuplexConnector } from 'mongodb-snapshot';
+import { MongoTransferer, MongoDBDuplexConnector, LocalFileSystemDuplexConnector } from '@tenthousandcoffees/mongodb-snapshot';
 
 async function dumpMongo2Localfile() {
     const mongo_connector = new MongoDBDuplexConnector({
@@ -39,7 +39,7 @@ async function dumpMongo2Localfile() {
 
 *restore mongodb database from a local file*
 ```typescript
-import { MongoTransferer, MongoDBDuplexConnector, LocalFileSystemDuplexConnector } from 'mongodb-snapshot';
+import { MongoTransferer, MongoDBDuplexConnector, LocalFileSystemDuplexConnector } from '@tenthousandcoffees/mongodb-snapshot';
 
 async function restoreLocalfile2Mongo() {
     const mongo_connector = new MongoDBDuplexConnector({
@@ -69,7 +69,7 @@ async function restoreLocalfile2Mongo() {
 
 *copy mongodb database to another mongodb database*
 ```typescript
-import { MongoTransferer, MongoDBDuplexConnector } from 'mongodb-snapshot';
+import { MongoTransferer, MongoDBDuplexConnector } from '@tenthousandcoffees/mongodb-snapshot';
 
 async function copyMongo2Mongo() {
     const mongo_connector_1 = new MongoDBDuplexConnector({
